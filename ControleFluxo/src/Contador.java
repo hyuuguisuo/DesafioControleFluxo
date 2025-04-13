@@ -9,7 +9,6 @@ public class Contador {
 		int parametroDois = terminal.nextInt();
 		
 		try {
-			//chamando o método contendo a lógica de contagem
 			contar(parametroUm, parametroDois);
 		
 		}catch (ParametrosInvalidosException exception) {
@@ -18,7 +17,6 @@ public class Contador {
 		terminal.close();
 	}
 	static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
-
 		if (parametroUm > parametroDois){
 			throw new ParametrosInvalidosException();
 		}
